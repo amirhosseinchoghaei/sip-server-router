@@ -19,11 +19,12 @@ opkg update
 
 opkg install asterisk asterisk-pjsip asterisk-bridge-simple asterisk-codec-alaw asterisk-codec-ulaw asterisk-res-rtp-asterisk
 
->/etc/asterisk/extensions.conf
+rm /etc/asterisk/extensions.conf
 >/etc/asterisk/pjsip.conf
 
-echo "[internal]
-exten => _XXXX,1,Dial(PJSIP/${EXTEN})" >> /etc/asterisk/extensions.conf
+cd /etc/asterisk/
+
+wget https://raw.githubusercontent.com/amirhosseinchoghaei/sip-server-router/main/extensions.conf
 
 echo "[simpletrans]
 type=transport
