@@ -1,11 +1,22 @@
 # sip-server-router
 How To Use Router as Sip Server (Asterisk openwrt)
 
-With This Script You Can Create Your own Sip Server on Your openwrt Router !
+With This Script You Can Create Your own Sip Server on Your openwrt Router without any physical or Cloud Servers ! 
 
-![This is an image](https://raw.githubusercontent.com/amirhosseinchoghaei/sip-server-router/main/Asterisk.png)
+Save Energy and Money ♻️♾️
 
-Step 1 : 
+Step 1 : Run This Command in Openwrt SSH
 ```
 rm -f asterisk.sh && wget https://raw.githubusercontent.com/amirhosseinchoghaei/sip-server-router/main/asterisk.sh && chmod 777 asterisk.sh && sh asterisk.sh
 ```
+
+- Sip Manage Menu Command :
+
+```
+gip
+```
+
+![This is an image](https://raw.githubusercontent.com/amirhosseinchoghaei/sip-server-router/main/Asterisk.png)
+
+
+Done !
